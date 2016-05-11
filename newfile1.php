@@ -1,12 +1,12 @@
 <html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Proyecto GIR</title>
 </head>
 <body>
 
 <h1>FINANCIA TUS SUENOS E INVIERTE EN EL FUTURO</h1> 
-<h4>Hola, usuario </h4>
+<h4>Hola, Vicente </h4>
 
 
 
@@ -55,6 +55,12 @@ $PAGE->set_pagelayout('incourse');
 
 // Show the page header
 echo $OUTPUT->header();
+
+echo "<tr>
+		<td><a href='newfile1.php'>INICIO</a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<td><a href='proyectos.php'>PROYECTOS</a></td>
+		</tr>";
+
 
 
 // Here goes the content
