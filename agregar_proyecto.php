@@ -6,7 +6,7 @@
 <body>
 
 <h1>FINANCIA TUS SUENOS E INVIERTE EN EL FUTURO</h1> 
-<h4>Hola, Vicente </h4>
+
 
 
 
@@ -56,15 +56,22 @@ $PAGE->set_pagelayout('incourse');
 // Show the page header
 echo $OUTPUT->header();
 
-echo "<tr>
-		<td><a href='newfile1.php'>INICIO</a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<td><a href='proyectos.php'>PROYECTOS</a></td>
-		</tr>";
 
-
-
-// Here goes the content
-//echo 'Hello world';
+echo'<form action="guardarproyecto.php" method="post" enctype="multipart/form-data">
+<table>
+<tr><td>Nombre del proyecto: </td><td><input type="text" name="nombre" />*</td></tr>
+<tr><td>Categoria: </td><td><select>
+  <option value="animales">Animales</option>
+  <option value="deporte">Deportes</option>
+  <option value="medioambiente">Medioambiente</option>
+  <option value="energia">Energia</option>
+		<option value="educación">Educacion</option>
+		<option value="recreación">Recreacion</option>
+		<option value="tecnología">Tecnologia</option>
+</select>*</td></tr>
+		<tr><td>Telefono del contacto: </td><td><input type="text" name="telefono" />*</td></tr>
+		 <tr><td></td><td><p><input name=enviardatos type="submit" /></p></td><td></td></tr>
+ </table>';
 
 // Show the page footer
 echo $OUTPUT->footer();
