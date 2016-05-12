@@ -31,15 +31,14 @@
 /**
  *
  * @package local
- * @subpackage tics331
- * @copyright 2012-onwards Jorge Villalon <jorge.villalon@uai.cl>
+ * @subpackage crowfounding
+ * @copyright 2012-onwards Vicente Ortiz <vortiz@alumnos.uai.cl>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 // Minimum for Moodle to work, the basic libraries
 require_once(dirname(dirname(dirname(__FILE__))) . '/config.php');
 
-// Parameter passed from the url.
-//$name = required_param('name', PARAM_TEXT);
+
 
 // Moodle pages require a context, that can be system, course or module (activity or resource)
 $context = context_system::instance();
@@ -49,14 +48,13 @@ $PAGE->set_context($context);
 require_login();
 
 // Page navigation and URL settings.
-//$PAGE->set_url(new moodle_url('/local/tics331', array('filter'=>$name)));
 $PAGE->set_pagelayout('incourse');
-//$PAGE->set_title('Hello world');
+
 
 // Show the page header
 echo $OUTPUT->header();
 
-
+//Formulario para agregar un proyecto
 echo'<form action="guardarproyecto.php" method="post" enctype="multipart/form-data">
 <table>
 <tr><td>Nombre del proyecto: </td><td><input type="text" name="nombre" />*</td></tr>
